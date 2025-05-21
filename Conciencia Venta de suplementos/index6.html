@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/style.css">
+    <title>Conciencia</title>
+    <link rel="icon" href="imagenes/conciencia.png" type="image/png">
+</head>
+
+<body>
+    <section class="Encabezado">
+         <!--Header con un mensaje de bievendia e icono de perfil-->
+        <header>
+            <img src="imagenes/conciencia.png" widht="60" height="60" class="logoo">
+            <h2 class="start" id="start">Inicio</h2>
+            <img src="imagenes/empty-profile.png" class="avatarr" id="account" alt="Foto de perfil">
+        </header>
+    </section>
+    <section class="Menu Encabezado">
+         <!--Menu desplegable de la página-->
+        <nav>
+            <div class="menu-container" id="menu">
+                <img src="imagenes/conciencia.png" widht="40" height="40" id="menuuu" class="logo">
+                <br>
+                <!--Secciones parea navegar-->
+                <div class="menu" id="menuu">
+                    <a href="#" id="Confirmarr">Historial pedidos</a>
+                    <a href="#" id="verCarrito">Ver carrito</a>
+                    <a href="#" id="verDeseado">Lista de deseados</a>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <!--Menu desplegable del carrito-->
+    <section class="Carrito desplegable">
+        <div id="carritoMenu">
+            <h3>Carrito<button id="salir">X</button></h3>
+            <ul id="listaCarrito"></ul>
+            <p>Total: $<span id="totalCarrito">0</span></p>
+            <button class="botoncomprar" id="verCarritoCompletooo">Ver Carrito Completo</button>
+            <button id="comprar">Finalizar compra</button>
+        </div>
+    </section>
+    <!--Menu despelgable de lista de deseados-->
+    <section class="Lista deseados deslegable">
+        <div id="menuDeseado">
+            <h3>Lista de deseados<button id="salirr">X</button></h3>
+            <ul id="listaDeseado"></ul>
+            <button class="botoncomprar" id="verMenuCompleto">Ver deseados completo</button>
+        </div>
+    </section>
+
+    <!--Datos del usuario a pedir-->
+    <div class="contenedor-compra">
+        <section class="Datoss">
+            <h2>Datos del usuario</h2>
+            <!--Dirección-->
+            <input id="direccion" placeholder="Dirección" >
+            <br><br>
+            <select id="Region">
+            <!--Región-->
+                <option value="">Región</option>
+                <option value="Colombia">Colombia</option>
+            </select>
+            <br><br>
+            <select id="metodopago">
+                <!--Método de pago-->
+                <option>Selecciona un método de pago</option>
+                <option value="Tarjeta">Tarjeta</option> 
+                <option value="contraentrega">Pago contra entrega</option>
+            </select>
+            <br><br>
+            <!--botón para confirmar compra-->
+            <button id="confirmarCompra">Confirmar compra</button>
+        </section>
+<!--detalles de la compra-->
+        <section class="detalle_compra_completo">
+            <h2>Detalle de compra</h2>
+            <!--Lista de los productso agregados previamente al carrito-->
+            <ul id="listaCompraCompleto"></ul>
+             <hr>
+            <p class="Totalcompra">Total:$<span id="totalCompleto"></span></p>
+        </section>
+    </div>
+     <!--Footer de la página con la información de la empresa y contactos-->
+    <script src="https://kit.fontawesome.com/2a1a9f724d.js" crossorigin="anonymous"></script>
+    <footer>
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="#">
+                        <img src="imagenes/conciencia.png" alt="logotipo">
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>SOBRE NOSOTROS </h2>
+                <p>En Conciencia, creemos que el bienestar integral es la base de una vida plena. Nuestra misión es
+                    acompañarte en el camino hacia un equilibrio físico y mental, ofreciéndote herramientas reales y
+                    efectivas para lograrlo.
+                </p>
+                <p>Nos especializamos en asesorías personalizadas y suplementos nutricionales diseñados para promover
+                    estilos de vida saludables, sostenibles y alineados con tus metas. Sabemos que cada persona es
+                    única, por eso trabajamos desde un enfoque holístico que une el conocimiento, la empatía y la
+                    ciencia para ayudarte a tomar decisiones conscientes sobre tu salud.</p>
+            </div>
+            <div class="box">
+                <h2>SIGUENOS</h2>
+                <div class="red-social">
+                    <a href="#" class="fa fa-whatsapp"></a>
+                    <a href="https://www.instagram.com/conci.encia1/" class="fa fa-instagram"></a>
+                </div>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <small>&copy; 2025<b>Conciencia</b> - Todos los Derechos Reservados</small>
+        </div>
+    </footer>
+    <!--Scripts vinculados-->
+    <script src="script.js"></script>
+    <script src="añadirproductos.js"></script>
+    <script src="carrito.js"></script>
+    <script src="compra.js"></script>
+    <script src="profile.js"></script>
+</body>
+
+</html>
